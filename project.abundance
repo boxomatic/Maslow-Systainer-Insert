@@ -41,19 +41,11 @@
             "ioValues": [
                 {
                     "name": "Base_Material_Thickness",
-                    "ioValue": 10
+                    "ioValue": 6
                 },
                 {
                     "name": "Material_Thickness",
-                    "ioValue": 10
-                },
-                {
-                    "name": "Sled_Diameter",
-                    "ioValue": 10
-                },
-                {
-                    "name": "name1",
-                    "ioValue": 10
+                    "ioValue": 6
                 }
             ],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -72,7 +64,7 @@
                     "atomType": "Input",
                     "name": "Base_Material_Thickness",
                     "x": 0.04,
-                    "y": 0.586374695863747,
+                    "y": 0.17274939172749393,
                     "uniqueID": 1744342944767,
                     "ioValues": [],
                     "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
@@ -82,31 +74,71 @@
                     "atomType": "Input",
                     "name": "Material_Thickness",
                     "x": 0.04,
-                    "y": 0.49878345498783455,
+                    "y": 0.25060827250608275,
                     "uniqueID": 1744343019826,
                     "ioValues": [],
                     "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
                     "type": "number"
                 },
                 {
-                    "atomType": "Input",
-                    "name": "Sled_Diameter",
-                    "x": 0.04,
-                    "y": 0.829683698296837,
-                    "uniqueID": 1744343152349,
-                    "ioValues": [],
-                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
-                    "type": "number"
-                },
-                {
-                    "atomType": "Input",
-                    "name": "name1",
-                    "x": 0.04,
-                    "y": 0.6812652068126521,
-                    "uniqueID": 1744343177119,
-                    "ioValues": [],
-                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
-                    "type": "number"
+                    "atomType": "Molecule",
+                    "name": "Insert_Base",
+                    "x": 0.1813890761968982,
+                    "y": 0.4233576642335766,
+                    "uniqueID": 1744343297637,
+                    "ioValues": [
+                        {
+                            "name": "Material_Thickness",
+                            "ioValue": 6
+                        }
+                    ],
+                    "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+                    "topLevel": false,
+                    "allAtoms": [
+                        {
+                            "atomType": "Output",
+                            "name": "Output",
+                            "x": 0.98,
+                            "y": 0.5,
+                            "uniqueID": 1744343297499,
+                            "ioValues": [],
+                            "description": "Connect geometry here to make it available in the next level up. "
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Material_Thickness",
+                            "x": 0.04,
+                            "y": 0.25060827250608275,
+                            "uniqueID": 1744343297476,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        },
+                        {
+                            "atomType": "Constant",
+                            "name": "Base_Material_Thickness",
+                            "x": 0.09979770734996629,
+                            "y": 0.3576642335766423,
+                            "uniqueID": 1744343335035,
+                            "ioValues": [],
+                            "description": "Defines a mathematical constant.",
+                            "value": 10
+                        },
+                        {
+                            "atomType": "Import",
+                            "name": "Import",
+                            "x": 0.1861092380310182,
+                            "y": 0.5109489051094891,
+                            "uniqueID": 1744343374835,
+                            "ioValues": [],
+                            "description": "Import Atom, let's you choose a type of file to import and use in your design.",
+                            "fileName": null,
+                            "type": null,
+                            "SVGwidth": 10
+                        }
+                    ],
+                    "allConnectors": [],
+                    "fileTypeVersion": 1,
+                    "compiledBom": {}
                 }
             ],
             "allConnectors": [],
