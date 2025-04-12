@@ -139,6 +139,107 @@
                     "allConnectors": [],
                     "fileTypeVersion": 1,
                     "compiledBom": {}
+                },
+                {
+                    "atomType": "Molecule",
+                    "name": "Left_Tower",
+                    "x": 0.40997977073499664,
+                    "y": 0.49635036496350365,
+                    "uniqueID": 1744416205301,
+                    "ioValues": [
+                        {
+                            "name": "Base_Material_Thickness",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "Material_Thickness",
+                            "ioValue": 10
+                        }
+                    ],
+                    "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+                    "topLevel": false,
+                    "allAtoms": [
+                        {
+                            "atomType": "Output",
+                            "name": "Output",
+                            "x": 0.98,
+                            "y": 0.5,
+                            "uniqueID": 1744416205751,
+                            "ioValues": [],
+                            "description": "Connect geometry here to make it available in the next level up. "
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Base_Material_Thickness",
+                            "x": 0.04,
+                            "y": 0.17274939172749393,
+                            "uniqueID": 1744416205539,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Material_Thickness",
+                            "x": 0.04,
+                            "y": 0.25060827250608275,
+                            "uniqueID": 1744416205587,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        },
+                        {
+                            "atomType": "Constant",
+                            "name": "Tower_Thickness",
+                            "x": 0.1153068105192178,
+                            "y": 0.36253041362530414,
+                            "uniqueID": 1744416254705,
+                            "ioValues": [],
+                            "description": "Defines a mathematical constant.",
+                            "value": 18
+                        },
+                        {
+                            "atomType": "Constant",
+                            "name": "Tower_Width_Top",
+                            "x": 0.11463250168577209,
+                            "y": 0.4768856447688564,
+                            "uniqueID": 1744416274083,
+                            "ioValues": [],
+                            "description": "Defines a mathematical constant.",
+                            "value": 35
+                        },
+                        {
+                            "atomType": "Constant",
+                            "name": "Tower_Width_Base",
+                            "x": 0.11463250168577209,
+                            "y": 0.5888077858880778,
+                            "uniqueID": 1744416311517,
+                            "ioValues": [],
+                            "description": "Defines a mathematical constant.",
+                            "value": 60
+                        },
+                        {
+                            "atomType": "Constant",
+                            "name": "TowerInsideEdgeOffset",
+                            "x": 0.11395819285232638,
+                            "y": 0.7274939172749392,
+                            "uniqueID": 1744416341965,
+                            "ioValues": [],
+                            "description": "Defines a mathematical constant.",
+                            "value": 125
+                        },
+                        {
+                            "atomType": "Constant",
+                            "name": "Tower_Height",
+                            "x": 0.11395819285232638,
+                            "y": 0.8369829683698298,
+                            "uniqueID": 1744416363411,
+                            "ioValues": [],
+                            "description": "Defines a mathematical constant.",
+                            "value": 195
+                        }
+                    ],
+                    "allConnectors": [],
+                    "fileTypeVersion": 1,
+                    "compiledBom": {}
                 }
             ],
             "allConnectors": [],
