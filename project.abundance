@@ -310,17 +310,17 @@
                         {
                             "atomType": "Rectangle",
                             "name": "Rectangle",
-                            "x": 0.4173971679028995,
-                            "y": 0.9148418491484185,
+                            "x": 0.41267700606877955,
+                            "y": 0.9294403892944039,
                             "uniqueID": 1744425980708,
                             "ioValues": [
                                 {
                                     "name": "x length",
-                                    "ioValue": 10
+                                    "ioValue": 6
                                 },
                                 {
                                     "name": "y length",
-                                    "ioValue": 10
+                                    "ioValue": 195
                                 }
                             ],
                             "description": "Creates a new rectangle."
@@ -372,8 +372,8 @@
                         {
                             "atomType": "Equation",
                             "name": "(d - t) / 2",
-                            "x": 0.3870532703978422,
-                            "y": 0.3965936739659367,
+                            "x": 0.42211732973701954,
+                            "y": 0.35279805352798055,
                             "uniqueID": 1744426037059,
                             "ioValues": [
                                 {
@@ -424,6 +424,10 @@
                                 {
                                     "name": "Shape 4",
                                     "ioValue": 1744426382803
+                                },
+                                {
+                                    "name": "Shape 5",
+                                    "ioValue": 1744426891596
                                 }
                             ],
                             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
@@ -475,8 +479,8 @@
                         {
                             "atomType": "Move",
                             "name": "Move",
-                            "x": 0.7714093054619016,
-                            "y": 0.8661800486618004,
+                            "x": 0.7444369521240728,
+                            "y": 0.7664233576642335,
                             "uniqueID": 1744426382803,
                             "ioValues": [
                                 {
@@ -489,7 +493,7 @@
                                 },
                                 {
                                     "name": "yDist",
-                                    "ioValue": 196
+                                    "ioValue": -97.5
                                 },
                                 {
                                     "name": "zDist",
@@ -500,22 +504,36 @@
                         },
                         {
                             "atomType": "Equation",
-                            "name": "x + y",
-                            "x": 0.6486850977747809,
-                            "y": 0.905109489051095,
+                            "name": "-x/2",
+                            "x": 0.6466621712744437,
+                            "y": 0.8418491484184915,
                             "uniqueID": 1744426766154,
                             "ioValues": [
                                 {
                                     "name": "x",
                                     "ioValue": 195
-                                },
-                                {
-                                    "name": "y",
-                                    "ioValue": 1
                                 }
                             ],
                             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                            "currentEquation": "x + y"
+                            "currentEquation": "-x/2"
+                        },
+                        {
+                            "atomType": "Extrude",
+                            "name": "Extrude",
+                            "x": 0.5684423465947404,
+                            "y": 0.9172749391727494,
+                            "uniqueID": 1744426891596,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": 1744425980708
+                                },
+                                {
+                                    "name": "height",
+                                    "ioValue": 183.5
+                                }
+                            ],
+                            "description": "Extrudes a 2D shape. Input can be negitive. "
                         }
                     ],
                     "allConnectors": [
@@ -539,6 +557,13 @@
                             "ap2Primary": false,
                             "ap1ID": 1744416205587,
                             "ap2ID": 1744425985015
+                        },
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "x length",
+                            "ap2Primary": false,
+                            "ap1ID": 1744416205587,
+                            "ap2ID": 1744425980708
                         },
                         {
                             "ap1Name": "number",
@@ -597,6 +622,13 @@
                             "ap2ID": 1744426766154
                         },
                         {
+                            "ap1Name": "number",
+                            "ap2Name": "y length",
+                            "ap2Primary": false,
+                            "ap1ID": 1744416363411,
+                            "ap2ID": 1744425980708
+                        },
+                        {
                             "ap1Name": "geometry",
                             "ap2Name": "geometry",
                             "ap2Primary": true,
@@ -616,6 +648,13 @@
                             "ap2Primary": true,
                             "ap1ID": 1744425975380,
                             "ap2ID": 1744426139681
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 1744425980708,
+                            "ap2ID": 1744426891596
                         },
                         {
                             "ap1Name": "geometry",
@@ -651,6 +690,13 @@
                             "ap2Primary": false,
                             "ap1ID": 1744426037059,
                             "ap2ID": 1744426379229
+                        },
+                        {
+                            "ap1Name": "result",
+                            "ap2Name": "height",
+                            "ap2Primary": false,
+                            "ap1ID": 1744426037059,
+                            "ap2ID": 1744426891596
                         },
                         {
                             "ap1Name": "geometry",
@@ -693,6 +739,13 @@
                             "ap2Primary": false,
                             "ap1ID": 1744426766154,
                             "ap2ID": 1744426382803
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "Shape 5",
+                            "ap2Primary": false,
+                            "ap1ID": 1744426891596,
+                            "ap2ID": 1744426172619
                         }
                     ],
                     "fileTypeVersion": 1,
