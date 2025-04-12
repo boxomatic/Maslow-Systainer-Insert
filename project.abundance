@@ -142,9 +142,9 @@
                 },
                 {
                     "atomType": "Molecule",
-                    "name": "Left_Tower",
-                    "x": 0.5104517869184086,
-                    "y": 0.20924574209245744,
+                    "name": "Right_Tower_Support",
+                    "x": 0.401888064733648,
+                    "y": 0.3941605839416058,
                     "uniqueID": 1744416205301,
                     "ioValues": [
                         {
@@ -329,6 +329,25 @@
                     ],
                     "fileTypeVersion": 1,
                     "compiledBom": {}
+                },
+                {
+                    "atomType": "Equation",
+                    "name": "(d - t) / 2",
+                    "x": 0.3088334457181389,
+                    "y": 0.7347931873479319,
+                    "uniqueID": 1744425784683,
+                    "ioValues": [
+                        {
+                            "name": "t",
+                            "ioValue": 18
+                        },
+                        {
+                            "name": "d",
+                            "ioValue": 385
+                        }
+                    ],
+                    "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                    "currentEquation": "(d - t) / 2"
                 }
             ],
             "allConnectors": [],
